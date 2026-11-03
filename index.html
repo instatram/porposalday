@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#180d1b">
+  <title>A Little Story for Nazneen ✦ Kashif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="phone" aria-label="A romantic proposal story">
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Start">K <span>✦</span> N</a>
+      <div class="top-center"><span class="live-dot"></span> A LITTLE FILM BY KASHIF</div>
+      <button class="close-top" id="exitBtn" aria-label="Close story" title="Close">×</button>
+    </header>
+
+    <div class="progress-row" aria-label="Story progress">
+      <div class="progress-track"><span id="progressFill"></span></div>
+      <span id="slideCount">01 / 04</span>
+    </div>
+
+    <section class="slider-window" id="sliderWindow">
+      <div class="slides-track" id="slidesTrack">
+        <!-- Scene 1 -->
+        <article class="slide intro-slide" aria-label="Opening scene">
+          <div class="scene-kicker"><span>✦</span> SOMETHING FROM THE HEART</div>
+          <div class="intro-art" aria-hidden="true">
+            <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+            <div class="moon"></div>
+            <div class="floating-heart heart-a">♥</div><div class="floating-heart heart-b">✦</div>
+            <div class="flower flower-a">✿</div><div class="flower flower-b">✧</div>
+            <div class="art-caption">a moment<br>just for you</div>
+          </div>
+          <p class="overline">DEAR DR. NAZNEEN ANSARI</p>
+          <h1>Some stories<br>deserve a <em>little</em><br>extra courage.</h1>
+          <p class="intro-copy">I could have just said it…<br>but you deserve a whole little moment. 🌷</p>
+          <button class="primary-btn start-btn" id="startBtn">Let's begin <span>→</span></button>
+          <p class="tiny-note">BEST EXPERIENCED WITH SOUND ON ♡</p>
+        </article>
+
+        <!-- Scene 2 -->
+        <article class="slide film-slide" aria-label="A little film">
+          <div class="scene-kicker"><span>01 — A LITTLE FILM</span><span class="spark">✦</span></div>
+          <h2>Not a movie star…<br><em>just a boy with feelings.</em></h2>
+          <p class="scene-copy">So here's a small video, made with a very big smile.</p>
+          <div class="film-frame">
+            <div class="film-topline"><span>FOR YOUR EYES ONLY</span><span>♥ K</span></div>
+            <video id="proposalVideo" controls playsinline preload="metadata" poster="">
+              <source src="assets/proposal_video.mp4" type="video/mp4">
+              Your browser does not support this video.
+            </video>
+            <div class="film-bottomline"><span>SCENE 01</span><span>THE BEGINNING OF A STORY</span></div>
+          </div>
+          <div class="film-foot"><span class="tiny-star">✦</span> No retakes. Just genuine feelings.</div>
+          <button class="text-next" data-next>There's more <span>→</span></button>
+        </article>
+
+        <!-- Scene 3 -->
+        <article class="slide letter-slide" aria-label="A personal note">
+          <div class="scene-kicker"><span>02 — A NOTE FOR YOU</span><span class="spark">✦</span></div>
+          <div class="letter-card">
+            <div class="letter-stamp">TO<br>NAZNEEN</div>
+            <div class="letter-sparkle">✧</div>
+            <p class="letter-hello">Dear Nazneen,</p>
+            <h2>I don't have<br>perfect words.<br><em>I have an honest heart.</em></h2>
+            <div class="letter-rule"></div>
+            <p class="letter-body">I don't know what the future holds, but I do know that I'd love the chance to make you smile, support your dreams, listen to you, and build something beautiful with honesty and respect.</p>
+            <p class="letter-sign">— Kashif <span>♥</span></p>
+          </div>
+          <p class="letter-bottom">A little nervous writing this. A lot happy sending it. 🥹</p>
+          <button class="text-next" data-next>One last question… <span>→</span></button>
+        </article>
+
+        <!-- Scene 4 -->
+        <article class="slide proposal-slide" aria-label="The proposal">
+          <div class="scene-kicker"><span>03 — THE BIG QUESTION</span><span class="spark">✦</span></div>
+          <div class="ring-art" aria-hidden="true"><div class="ring-glow"></div><div class="ring-shape">♡</div><div class="ring-star">✧</div></div>
+          <p class="overline">DR. NAZNEEN ANSARI</p>
+          <h2 class="proposal-title">Will you make<br>this story <em>ours?</em></h2>
+          <p class="proposal-copy">Kashif has one little question<br>and a heart full of hope.</p>
+          <div class="choice-arena" id="choiceArena">
+            <button class="yes-btn" id="yesBtn">YES, LET'S! <span>♥</span></button>
+            <button class="no-btn" id="noBtn" aria-label="No">No 🙈</button>
+          </div>
+          <p class="runaway-hint" id="runawayHint" aria-live="polite">The “No” button is feeling a little shy… 😅</p>
+          <p class="respect-note">No pressure, always. Your feelings matter. 🤍</p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="slider-nav" aria-label="Story navigation">
+      <button id="prevBtn" class="nav-arrow" aria-label="Previous scene" disabled>←</button>
+      <div class="dots" id="sliderDots">
+        <button class="dot active" data-slide="0" aria-label="Scene 1"></button>
+        <button class="dot" data-slide="1" aria-label="Scene 2"></button>
+        <button class="dot" data-slide="2" aria-label="Scene 3"></button>
+        <button class="dot" data-slide="3" aria-label="Scene 4"></button>
+      </div>
+      <button id="nextBtn" class="nav-arrow" aria-label="Next scene">→</button>
+    </nav>
+
+    <div class="soundbar" id="soundbar">
+      <button class="record-button" id="musicToggle" aria-label="Play soundtrack" title="Play soundtrack">
+        <span class="record"><span class="record-center">✦</span></span>
+        <span class="sound-bars"><i></i><i></i><i></i><i></i></span>
+      </button>
+      <div class="sound-copy"><strong>OUR LITTLE SOUNDTRACK</strong><span id="musicStatus">A melody, just for this moment</span></div>
+      <span class="sound-note">♫</span>
+    </div>
+    <audio id="song" preload="metadata" loop>
+      <source src="assets/song.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+
+  <div class="success-overlay hidden" id="successOverlay" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="success-card">
+      <div class="success-confetti">✦　♡　✧　♥　✦</div>
+      <div class="success-kicker">A NEW LITTLE BEGINNING</div>
+      <h2 id="successTitle">You made<br>Kashif's day. <em>💗</em></h2>
+      <p>Thank you, Nazneen. Your “Yes” means more than words can say. I promise to respect your dreams, listen to your heart, celebrate your happiness, and keep choosing honesty and kindness. Here's to a beautiful beginning, one moment at a time.</p>
+      <div class="success-sign">With all my heart,<br><strong>Kashif</strong></div>
+      <button class="share-btn" id="shareBtn">Share this moment on WhatsApp <span>↗</span></button>
+      <button class="replay-btn" id="replayBtn">Watch our little story again</button>
+    </div>
+  </div>
+
+  <div class="exit-overlay hidden" id="exitOverlay" role="dialog" aria-modal="true">
+    <div class="exit-card"><span>🤍</span><h2>Take your time.</h2><p>There's no pressure here. Close this little story whenever you like.</p><button id="stayBtn" class="primary-btn">Back to the story</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
